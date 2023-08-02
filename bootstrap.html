@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="qquiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Quizz JavaScript</span>
+            <span>score: <span id="score">0</span></span>
+        </div>
+        <div class="body">
+            <div class="set active">
+                <h4>1. Comment renvoyer un nombre aléatoire compris entre 0 et 1 ?</h4>
+                <div class="row">
+                    <input type="radio" name="a1">
+                    <span>rnd()</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a1" >
+                    <span>Math.rnd()</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a1" valid="valid">
+                    <span>Math.random()</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a1">
+                    <span>random()</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>2. JavaScript </h4>
+                <div class="row">
+                    <input type="radio" name="a2" id="">
+                    <span>doit être compilé avant d'être exécuté</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a2" id="" valid="valid">
+                    <span>s'exécute sur le client</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a2" id="" >
+                    <span>s'exécute sur le serveur uniquement</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>3. Que fait i++ ?</h4>
+                <div class="row">
+                    <input type="radio" name="a3">
+                    <span>décale la valeur binaire de i</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a3" >
+                    <span>renvoie la chaîne "i+"</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a3" valid="valid" >
+                    <span>incrémente i de 1</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a3" >
+                    <span>n'existe pas en JavaScript</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>4. Comment lire le jour du mois dans une date ?</h4>
+                <div class="row">
+                    <input type="radio" name="a4" id="">
+                    <span>getDay()</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a4" id="" >
+                    <span>Day()</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a4" id="" valid="valid">
+                    <span>getDate()</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>5.  Que retourne typeof (1>2) ?</h4>
+                <div class="row">
+                    <input type="radio" name="a5">
+                    <span>false</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a5">
+                    <span>true</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a5" valid="valid">
+                    <span>boolean</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>6. Comment trouver la longueur de la variable Nom ?</h4>
+                <div class="row">
+                    <input type="radio" name="a6" id="">
+                    <span>length(Nom)</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a6" id="" valid="valid">
+                    <span>Nom.length</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a6" id="" >
+                    <span>Nom[].length</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>7. Quel opérateur est utilisé pour concaténer ? </h4>
+                <div class="row">
+                    <input type="radio" name="a7" valid="valid">
+                    <span>+</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a7" >
+                    <span>&&</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a7">
+                    <span>''</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>8. Le Dom</h4>
+                <div class="row">
+                    <input type="radio" name="a8">
+                    <span>est un moteur de bases de données</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a8" >
+                    <span>est spécifique a JavaScript</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a8" valid="valid">
+                    <span>décrit la structure du document HTML ou XML</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>9. Comment mettre un commentaire sur une seule ligne ?</h4>
+                <div class="row">
+                    <input type="radio" name="a9" valid="valid">
+                    <span>//</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a9" >
+                    <span>\\</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a9" >
+                    <span>/*...*/</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a9" >
+                    <span><!--...--></span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>10. Que fais T1.pop() sur le tableau T1 ?</h4>
+                <div class="row">
+                    <input type="radio" name="a10" >
+                    <span>supprime et renvoie la première valeur</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a10" >
+                    <span>supprime la première valeur</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a10" valid="valid">
+                    <span>supprime et renvoie la dernière valeur</span>
+                </div>
+                <div class="row">
+                    <input type="radio" name="a10">
+                    <span>supprime la dernière valeur</span>
+                </div>
+            </div>
+            <div class="set">
+                <h4>Votre score total est de <span id="totalscore">0</span> sur 10</h4>
+                <a class="btn1" href="start.html" >retour</a>
+                <a class="btn1" href="bootstrap.html" >ressayer</a>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="btn1" id="sauter">sauter</span>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
