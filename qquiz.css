@@ -10,12 +10,14 @@ body{
     background: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);;
     color: #000;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
     min-height: 100vh;
 }
 .container{
-    width: 500px;
+    width: 380px;
     padding: 20px;
     min-height: 100px;
     background-color: #fff;
@@ -30,7 +32,7 @@ body{
     padding: 15px 20px;
     margin: -20px -20px 20px;
     border-radius: 15px 15px 0 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 .set{
     display: none;
@@ -78,8 +80,10 @@ body{
     text-align: right;
 }
 .btn1{
-    display: inline-block;
-    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
     background-color: #03cae4;
     color: #fff;
     border-radius: 15px;
@@ -90,3 +94,6 @@ body{
 .btn1{
     background-color: #04adc4;
 } 
+a{
+    margin-bottom: 10px;
+}

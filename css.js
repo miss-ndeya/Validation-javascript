@@ -3,7 +3,6 @@ const sauter = document.getElementById("sauter");
 const score = document.getElementById("score");
 const totalScore = document.getElementById("totalscore");
 const countdown = document.getElementById("countdown");
-const para = document.getElementById('p')
 const set = document.querySelectorAll(".set");
 const row = document.querySelectorAll(".row input");
 
@@ -15,6 +14,11 @@ let scoreCount = 0;
 // sauter.addEventListener("click", function () {
 //   quizz();
 // });
+const paragraphe = document.getElementById('para')
+
+if (localStorage.getItem("scorecss") != null) {
+    p.textContent = `votre score CSS est de ${localStorage.getItem("score")}`
+}
 
 // boucle pour parcourir la liste 
 row.forEach(function (rowSingle) {
@@ -30,7 +34,7 @@ row.forEach(function (rowSingle) {
       scoreCount += 1;
       score.innerHTML = scoreCount;
       totalScore.innerHTML = scoreCount;
-      localStorage.setItem("score", scoreCount);
+      localStorage.setItem("scorecss", scoreCount);
     } else {
       scoreCount -= 1;
       score.innerHTML = scoreCount;
@@ -50,9 +54,5 @@ function quizz() {
   if (count == 10) {
     sauter.style.display = "none";
   }
-}
-
-if (localStorage.getItem("score" )!= null) {
-  para.textContent = `votre score est de ${localStorage.getItem("score")}`
 }
 
