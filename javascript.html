@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1>Quizz JavaScript</h1>
+            <h2>score : <span id="score">0</span></h2>
+        </div>
+
+            <form class="container-body">
+                <div class="question active">
+                    <h4>1. Comment renvoyer un nombre aléatoire compris entre 0 et 1 ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q1">
+                        <label for="q1">rnd()</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q1" >
+                        <label for="q1">Math.rnd()</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q1" valid="valid">
+                        <label for="q1">Math.random()</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q1">
+                        <label for="q1">random()</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>2. JavaScript </h4>
+                    <div class="reponse">
+                        <input type="radio" name="q2">
+                        <label for="q2">doit être compilé avant d'être exécuté</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q2" valid="valid">
+                        <label for="q2">s'exécute sur le client</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q2" >
+                        <label for="q2">s'exécute sur le serveur uniquement</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>3. Que fait i++ ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q3">
+                        <label for="q3">décale la valeur binaire de i</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q3" >
+                        <label for="q3">renvoie la chaîne "i+"</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q3" valid="valid" >
+                        <label for="q3">incrémente i de 1</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q3" >
+                        <label for="q3">n'existe pas en JavaScript</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>4. Comment lire le jour du mois dans une date ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q4" >
+                        <label for="q4">getDay()</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q4"  >
+                        <label for="q4">Day()</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q4"  valid="valid">
+                        <label for="q4">getDate()</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>5.  Que retourne typeof (1>2) ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q5">
+                        <label for="q5">false</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q5">
+                        <label for="q5">true</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q5" valid="valid">
+                        <label for="q5">boolean</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>6. Comment trouver la longueur de la variable Nom ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q6" >
+                        <label for="q6">length(Nom)</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q6"  valid="valid">
+                        <label for="q6">Nom.length</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q6"  >
+                        <label for="q6">Nom[].length</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>7. Quel opérateur est utilisé pour concaténer ? </h4>
+                    <div class="reponse">
+                        <input type="radio" name="q7" valid="valid">
+                        <label for="q7">+</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q7" >
+                        <label for="q7">&&</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q7">
+                        <label for="q7">''</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>8. Le Dom</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q8">
+                        <label for="q8">est un moteur de bases de données</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q8" >
+                        <label for="q8">est spécifique a JavaScript</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q8" valid="valid">
+                        <label for="q8">décrit la structure du document HTML ou XML</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>9. Comment mettre un commentaire sur une seule ligne ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q9" valid="valid">
+                        <label for="">//</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q9" >
+                        <label for="q9">\\</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q9" >
+                        <label for="q9">/*...*/</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q9" >
+                        <label for="q9"><!--...--></label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>10. Que fais T1.pop() sur le tableau T1 ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q10" >
+                        <label for="q10">supprime et renvoie la première valeur</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q10" >
+                        <label for="q10">supprime la première valeur</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q10" valid="valid">
+                        <label for="q10">supprime et renvoie la dernière valeur</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q10">
+                        <label for="q10">supprime la dernière valeur</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>Votre score total est de <span id="totalscore">0</span> sur 10</h4>
+                    <a class="btn1" href="index.html" >retour</a>
+                    <a class="btn1" href="javascript.html" >ressayer</a>
+                </div>
+                
+            </form>
+
+        <div class="container-footer">
+            <button type="button" id="sauter" class="btn1">Sauter</button>
+        </div>
+        <div>
+            <p id="p" style="display: none;"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

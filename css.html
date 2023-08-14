@@ -3,189 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="qquiz.css">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <span>Quizz CSS</span>
-            <span>score: <span id="score">0</span></span>
+        <div class="container-header">
+            <h1>Quizz CSS</h1>
+            <h2>score : <span id="score">0</span></h2>
         </div>
-        <div class="body">
-            <div class="set active">
-                <h4>1. Pourquoi utilise-t-on généralement du CSS ?</h4>
-                <div class="row">
-                    <input type="radio" name="a1">
-                    <span>Pour se compliquer la vie bien sûr</span>
+
+            <form class="container-body">
+                <div class="question active">
+                    <h4>1. Pourquoi utilise-t-on généralement du CSS ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q1">
+                        <label for="q1">Pour se compliquer la vie bien sûr</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q1" valid="valid">
+                        <label for="q1">Pour séparer le contenu et la présentation des documents web</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q1">
+                        <label for="q1">Cela permet de faire de plus jolis dégradés de couleurs</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a1" valid="valid">
-                    <span>Pour séparer le contenu et la présentation des documents web</span>
+                <div class="question">
+                    <h4>2. Que signifie CSS ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q2" valid="valid">
+                        <label for="q2">Cascading Style Sheets</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q2">
+                        <label for="q2">Create Simple Samples</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q2">
+                        <label for="q2">Choucroute et Saucisses de Strasbourg</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a1">
-                    <span>Cela permet de faire de plus jolis dégradés de couleurs</span>
+                <div class="question">
+                    <h4>3. Où est-il conseillé de placer le code CSS ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q3">
+                        <label for="q3">Entre les balises &lthead&gt, c'est bien plus propre</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q3">
+                        <label for="q3">Dans un fichier JavaScript</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q3" valid="valid">
+                        <label for="q3">Dans un fichier externe utilisable pour plusieurs pages</label>
+                    </div>
                 </div>
-            </div>
-            <div class="set">
-                <h4>2. Que signifie CSS ?</h4>
-                <div class="row">
-                    <input type="radio" name="a2" valid="valid">
-                    <span>Cascading Style Sheets</span>
+                <div class="question">
+                    <h4>4. Quel élément sépare la propriété de sa valeur ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q4">
+                        <label for="q4">Le signe espace ( )</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q4">
+                        <label for="q4">Le signe egal (=)</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q4" valid="valid">
+                        <label for="q4">Le signe deux point (:)</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a2">
-                    <span>Create Simple Samples</span>
+                <div class="question">
+                    <h4>5.À quoi sert le langage CSS ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q5">
+                        <label for="q5">À réaliser des pages dynamiques</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q5" valid="valid">
+                        <label for="q5">À ajouter du style aux documents web</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q5" >
+                        <label for="q5">À insérer du contenu dans une page internet</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a2">
-                    <span>Choucroute et Saucisses de Strasbourg</span>
+                <div class="question">
+                    <h4>6. Comment cibler les 4 premiers éléments d'une liste ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q6">
+                        <label for="q6">li:nth-child(4n)</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q6" valid="valid">
+                        <label for="q6">li:nth-child(-n+4)</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q6" >
+                        <label for="q6">li:nth-child(4-n)</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q6" >
+                        <label for="q6">li:nth-child(substr(4))
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="set">
-                <h4>3. Où est-il conseillé de placer le code CSS ?</h4>
-                <div class="row">
-                    <input type="radio" name="a3">
-                    <span>Entre les balises &lthead&gt, c'est bien plus propre valid="valid"</span>
+                <div class="question">
+                    <h4>7. À quoi correspond une hauteur de 50vh ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q7">
+                        <label for="q7">à la moitié de la hauteur du parent</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q7" >
+                        <label for="q7">à la moitié de la hauteur de ses enfants</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q7" valid="valid">
+                        <label for="q7">à la moitié de la hauteur de la fenêtre</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a3" >
-                    <span>Dans un fichier JavaScript</span>
+                <div class="question"> 
+                    <h4>8. Qui est Tim Berners-Lee ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q8" valid="valid">
+                        <label for="q8">l’inventeur du Web</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q8" >
+                        <label for="q8">l’inventeur du Responsive Webdesign</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q8" >
+                        <label for="q8">l’inventeur de CSS</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a3" valid="valid">
-                    <span>Dans un fichier externe utilisable pour plusieurs pages</span>
+                <div class="question">
+                    <h4>9. Trouvez l'intrus :</h4>
+                <div class="reponse">
+                    <input type="radio" name="q9">
+                    <label for="q9">justify-content: flex-start;</label>
                 </div>
-            </div>
-            <div class="set">
-                <h4>4. Quel élément sépare la propriété de sa valeur ?</h4>
-                <div class="row">
-                    <input type="radio" name="a4">
-                    <span>Le signe espace ( )</span>
+                <div class="reponse">
+                    <input type="radio" name="q9" >
+                    <label for="q9">align-items: flex-start;</label>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a4">
-                    <span>Le signe égal (=)</span>
+                <div class="reponse">
+                    <input type="radio" name="q9" >
+                    <label for="q9">align-content: flex-start;</label>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a4" valid="valid">
-                    <span>Le signe deux point (:)</span>
+                <div class="reponse">
+                    <input type="radio" name="q9" valid="valid">
+                    <label for="q9">align-self: flex-start;</label>
                 </div>
-            </div>
-            <div class="set">
-                <h4>5.À quoi sert le langage CSS ?</h4>
-                <div class="row">
-                    <input type="radio" name="a5">
-                    <span>À réaliser des pages dynamiques</span>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a5" valid="valid">
-                    <span>À ajouter du style aux documents web
-                    </span>
+                <div class="question">
+                    <h4>10. Quelle valeur existe dans Grid Layout ?</h4>
+                    <div class="reponse">
+                        <input type="radio" name="q10" >
+                        <label for="q10">display: ingrid</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q10" valid="valid">
+                        <label for="q10">display: inline-grid</label>
+                    </div>
+                    <div class="reponse">
+                        <input type="radio" name="q10" >
+                        <label for="q10">display: auto-grid</label>
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="radio" name="a5" >
-                    <span>À insérer du contenu dans une page internet</span>
+                <div class="question">
+                    <h4>Votre score total est de <span id="totalscore">0</span> sur 10</h4>
+                    <a class="btn1" href="index.html" >retour</a>
+                    <a class="btn1" href="css.html" >ressayer</a>
                 </div>
-            </div>
-            <div class="set">
-                <h4>6. Comment cibler les 4 premiers éléments d'une liste ?</h4>
-                <div class="row">
-                    <input type="radio" name="a6">
-                    <span>li:nth-child(4n)</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a6" valid="valid">
-                    <span>li:nth-child(-n+4)</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a6" >
-                    <span>li:nth-child(4-n)</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a6" >
-                    <span>li:nth-child(substr(4))
-                    </span>
-                </div>
-            </div>
-            <div class="set">
-                <h4>7. À quoi correspond une hauteur de 50vh ?</h4>
-                <div class="row">
-                    <input type="radio" name="a7">
-                    <span>à la moitié de la hauteur du parent</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a7" >
-                    <span>à la moitié de la hauteur de ses enfants</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a7" valid="valid">
-                    <span>à la moitié de la hauteur de la fenêtre</span>
-                </div>
-            </div>
-            <div class="set">
-                <h4>8. Qui est Tim Berners-Lee ?</h4>
-                <div class="row">
-                    <input type="radio" name="a8" valid="valid">
-                    <span>l’inventeur du Web</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a8" >
-                    <span>l’inventeur du Responsive Webdesign</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a8" >
-                    <span>l’inventeur de CSS</span>
-                </div>
-            </div>
-            <div class="set">
-                <h4>9. Trouvez l'intrus :</h4>
-                <div class="row">
-                    <input type="radio" name="a9">
-                    <span>justify-content: flex-start;</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a9" >
-                    <span>align-items: flex-start;</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a9" >
-                    <span>align-content: flex-start;</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a9" valid="valid">
-                    <span>align-self: flex-start;</span>
-                </div>
-            </div>
-            <div class="set">
-                <h4>10. Quelle valeur existe dans Grid Layout ?</h4>
-                <div class="row">
-                    <input type="radio" name="a10" >
-                    <span>display: ingrid</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a10" valid="valid">
-                    <span>display: inline-grid</span>
-                </div>
-                <div class="row">
-                    <input type="radio" name="a10" >
-                    <span>display: auto-grid</span>
-                </div>
-            </div>
-            <div class="set">
-                <h4>Votre score total est de <span id="totalscore">0</span> sur 10</h4>
-                <a class="btn1" href="index.html" >retour</a>
-                <a class="btn1" href="css.html" >ressayer</a>
-            </div>
-        </div>
-        <div class="footer">
-            <span class="btn1" id="sauter" onclick="quizz()">sauter</span>
+                
+            </form>
+
+        <div class="container-footer">
+            <button type="button" id="sauter" class="btn1">Sauter</button>
         </div>
         <div>
-            <p id="p" style="color: black; display: none;"></p>
+            <p id="p" style="display: none;"></p>
         </div>
     </div>
-    <script src="quiz.js"></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
