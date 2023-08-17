@@ -1,4 +1,5 @@
 const totalScore = document.getElementById("totalscore");
+const para = document.getElementById("p");
 let scoreQuestion = 0;
 
 document.getElementById("sauter").addEventListener("click", function () {
@@ -11,7 +12,6 @@ class Quizz {
     this.score = document.getElementById("score");
     this.questions = document.querySelectorAll(".question");
     this.reponses = document.querySelectorAll(".reponse input");
-    this.para = document.getElementById("p");
 }
 
   foreachFonction() {
@@ -33,7 +33,7 @@ class Quizz {
           score.innerHTML = scoreQuestion;
           totalScore.innerHTML = scoreQuestion;
         }
-        quizz.localStorageFunction();
+        // quizz.localStorageFunction();
       });
     });
   }
@@ -48,13 +48,13 @@ class Quizz {
       }
     }
   }
-
-  localStorageFunction() {
-    if (localStorage.getItem("score") !== null) {
-      this.para.textContent = `votre score est de ${localStorage.getItem("score")}`;
-    }
-  }
 }
 const quizz = new Quizz();
 quizz.foreachFonction();
 
+// localStorageFunction() {
+  let score = localStorage.getItem("score")
+  if ( score !== null) {
+    para.textContent = `votre score est de ${score}`;
+  }
+// }
