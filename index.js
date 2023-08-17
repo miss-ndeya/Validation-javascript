@@ -3,16 +3,18 @@ const score = document.getElementById("score");
 const questions = document.querySelectorAll(".question");
 const reponses = document.querySelectorAll(".reponse input");
 const totalScore = document.getElementById("totalscore");
-const para = document.getElementById('p')
-
+const para = document.getElementById("p");
+console.log(para);
 let question = 0;
 let scoreQuestion = 0;
 
+// ecouteur d'evenement au click du button sauter
+document.getElementById("sauter").addEventListener("click", quizz)
 
 
-//  boucle pour parcourir la liste 
+//  boucle pour parcourir la liste
 reponses.forEach(function (reponse) {
-  // evenement click sur l'input 
+  // evenement click sur l'input
   reponse.addEventListener("click", function () {
     setTimeout(function () {
       quizz();
@@ -33,24 +35,18 @@ reponses.forEach(function (reponse) {
   });
 });
 
-// ecouteur d'evenement au click du button sauter
-sauter.addEventListener("click", () => {
-    quizz();
-})
-
 // fonction pour sauter une reponse
 function quizz() {
-  question += 1
+  question += 1;
   for (let i = 0; i < questions.length; i++) {
-      questions[i].className = "question" 
-      questions[question].className = "question active"
-      if (question == 10) {
-          sauter.style.display = "none"
-  }
+    questions[i].className = "question";
+    questions[question].className = "question active";
+    if (question == 10) {
+      sauter.style.display = "none";
+    }
   }
 }
 
-
-if (localStorage.getItem("score" )!= null) {
-    para.textContent = `votre score est de ${localStorage.getItem("score")}`
-  }
+if (localStorage.getItem("score") != null) {
+  para.textContent = `votre score est de ${localStorage.getItem("score")}`;
+}
